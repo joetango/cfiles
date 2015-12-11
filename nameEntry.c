@@ -11,7 +11,7 @@ int main ()
     int i;
     FILE *f; //File pointer declaration
 
-    printf("\nHey there, you don't look like a local... What is your name?\n\n");
+    printf("What is your name?\n");
     printf("(please enter 16 characters or less and no spaces)\nNAME:");
     scanf("%s" ,userName);
     
@@ -21,10 +21,10 @@ int main ()
     printf("Please restart the program and only use 16 characters or less\n");
     }
     else{
-	printf("\n%s, what an... interesting name.\n" , userName);
+	printf("You entered: %s\n" , userName);
 
 	f = fopen("save.txt" , "w"); //Opens or creates file 
-	fprintf(f, "%s" , userName); //Writes value of userName to file 
+	fprintf(f, "%s\n" , userName); //Writes value of userName to file 
 	fclose(f); //Closes file
     }
 }//main 
