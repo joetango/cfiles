@@ -1,4 +1,5 @@
-//Documentation to fill in later
+//Code to read the contents of "save.txt"
+//Written by Joe Dickerson
 
 #include <stdio.h>
 
@@ -10,11 +11,11 @@ int main ()
     char userName[16];
 
 
-    f = fopen("save.txt" , "r");
-    fgets(userName, 16, f);
-    
+    f = fopen("save.txt" , "r"); //Opens save.txt
+    fgets(userName, 16, f); //Obtains contents, puts it in char array "userName," and readit from file f
+
     printf("%s" , userName);
 
-    fclose(f);
+    fclose(f); //Closes file
 
 }//main
