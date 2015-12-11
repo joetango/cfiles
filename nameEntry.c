@@ -24,12 +24,12 @@ int main ()
 
     //The point of the loop and if statement is so if the user inputs too many characters, rather than close the program 
     //the user will just get another scanf
-    for(i=i;i>16;i){
-	scanf("%s" ,userName); //User input
-	for(i=0; userName[i]!='\0'; ++i); //Makes length of string integer and sets it to i
-	if (i>16){ 
-	    printf("Please use 16 characters or less.\n");
-	}
+    char current;
+    for(i=0;i<16;i++) {
+	scanf("%c" ,&current); //User input
+	//If endline enterned, break from loop
+	if (current == '\n') break;
+	userName[i] = current;
     }
    
 	printf("You entered: %s\n" , userName);
