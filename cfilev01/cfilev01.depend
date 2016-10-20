@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1476982519 source:/home/mhcrnl/Desktop/Year2016/October/cfiles/cfilev01/main.c
+	<stdio.h>
+	<stdlib.h>
+	"cfilev01.h"
+
+1476982519 /home/mhcrnl/Desktop/Year2016/October/cfiles/cfilev01/cfilev01.h
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+
