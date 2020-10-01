@@ -8,7 +8,7 @@ int main ()
 
     //Declarations
     char userName[16];
-    int i;
+    int i=0;
     FILE *f; //File pointer declaration
 
     printf("What is your name?\n");
